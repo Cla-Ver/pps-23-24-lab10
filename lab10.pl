@@ -88,6 +88,3 @@ drop(cons(H, T), s(N), R) :- drop(T, N, R).
 take(List, zero, nil).
 take(cons(H, T), s(N), cons(H, R)) :- take(T, N, R).
 %Example: take(cons(a, cons(b, cons(c, nil))), s(s(zero)), cons(a, cons(b, nil))).
-
-%filter(nil, pred, nil).
-%filter(cons(H, T), Pred, cons(H, R)) :- Pred(H, H), filter(T, Pred, R).
